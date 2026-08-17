@@ -18,8 +18,22 @@ void traversal(n *head){
     }
 }
 
+n *reverse(n *head){
+    n *p=head;
+    n *q=NULL;
 
+    while(p!=NULL){
+        q=p->prev;
+        p->prev=p->next;
+        p->next=q;
 
+        p=p->prev;
+    }
+
+    if(q!=NULL){
+
+    }
+}
 
 
 
@@ -53,6 +67,7 @@ printf("before\n");
 traversal(head);
 printf("after\n");
 
+head=delatpos(head,1);
 traversal(head);
 
 
