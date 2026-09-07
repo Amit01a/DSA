@@ -20,20 +20,11 @@ void traversal(struct node *head){
 struct node * insertatbegin(struct node *head,int data)
 {
 struct node *ptr=(struct node*)malloc(sizeof(struct node));
-// struct node *p=head;
 
-// ptr->data=data;
-// ptr->next=head;
-// ptr->prev=NULL;
-// // head->prev=ptr;
-// ptr=head;
-// return ptr;
 ptr->data = data;
     ptr->prev = NULL;
     ptr->next = head;
-    // if (head != NULL) {
-    //     head->prev = ptr;
-    // }
+
     return ptr; 
 }
 
